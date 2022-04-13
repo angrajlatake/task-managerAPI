@@ -4,7 +4,7 @@ const taskRoutes = require('./routes/tasks');
 const cors = require('cors');
 require('dotenv').config(); // load .env variables
 
-const { PORT } = process.env;
+const PORT = process.env.PORT || 8080;
 
 /*
  * Middleware
